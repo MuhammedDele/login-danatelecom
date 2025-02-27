@@ -94,6 +94,39 @@ h2,h5, h3, label, button,p, .footer {
     text-align: center;
     box-shadow: 0 10px 50px rgb(96 68 121 / 10%);
   }
+  .login button {
+    color: #f9f9f9 !important;
+    background: rgb(40, 35, 105); /* Your logo color */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .login button:hover {
+    background: #333; /* Darker shade when hovered */
+  }
+  
+  /* Link Color */
+  .login a {
+    font-size: 14px;
+    color: rgb(40, 35, 105); /* Your logo color */
+    text-decoration: none;
+  }
+  
+  .login a:hover {
+    color: #333; /* Darker shade when hovered */
+  }
+  
+  /* Link in Paragraph */
+  .login p a {
+    color: rgb(40, 35, 105); /* Your logo color */
+  }
+  
+  .login p a:hover {
+    color: #333; /* Darker shade when hovered */
+  }
   
   .login img {
     width: 150px;
