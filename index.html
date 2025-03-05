@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="chatbot.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +17,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <img src="blob.svg" class="blob" />
@@ -36,14 +42,19 @@
           <input required type="password" />
           <label>كلمة المرور</label>
         </div>
-        <button type="submit" style="background-color: rgb(40, 35, 105);">تسجيل الدخول</button>
+        <button type="submit" style="background-color: rgb(40, 35, 105)">
+          تسجيل الدخول
+        </button>
         <p>انترنت مجاني <a>اضغط هنا</a></p>
       </form>
-      <!-- <a>Forgot password?</a> -->
       <h5 class="contact">
         للتواصل معنا
         <br />
-        <a href="https://wa.me/+352681554664" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://wa.me/+352681554664"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span class="phone-number">352681554664+</span>
           <i class="fa-brands fa-whatsapp fa-xl"></i>
         </a>
@@ -52,14 +63,38 @@
         <p>
           <span>العنوان: الدانا - الشارع العام - عبارة الضلع</span>
           <br />
-          <a href="https://maps.google.com/?daddr=36.211130, 36.772704" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://maps.google.com/?daddr=36.211130, 36.772704"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-solid fa-location-dot"></i> افتح في خرائط جوجل
           </a>
-          
         </p>
       </footer>
-    
-    
     </div>
+
+    <!-- Chatbot Floating Button -->
+    <div id="chatbot-container">
+      <button id="chatbot-btn">
+        <i class="fa-solid fa-comments"></i>
+      </button>
+      <!-- Chat Window -->
+      <div id="chat-window" class="hidden">
+        <div class="chat-header">
+          <span>AI Assistant</span>
+          <button id="close-chat"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-body">
+          <p class="bot-message">مرحبا! كيف يمكنني مساعدتك؟</p>
+        </div>
+        <div class="chat-footer">
+          <input type="text" id="user-input" placeholder="اكتب رسالتك هنا..." />
+          <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="chatbot.js"></script>
   </body>
 </html>
